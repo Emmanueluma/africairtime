@@ -1,0 +1,342 @@
+section.main{
+    width: 50%;
+    height: 100%;
+}
+section.main div.input{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.main div.input .input-contain{
+    width: 80%;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.main div.input .input-contain img{
+    margin-right: 1rem;
+}
+section.main div.input .input-contain input{
+    background-color: transparent;
+    height: 40px;
+    width: 80%;
+    border-radius: 10px;
+    text-indent: 1rem;
+    color: #fff;
+    font-size: 1.5rem;
+}
+section.main div.input .input-contain input:focus{
+    border: 2px solid var(--brown-g);
+}
+section.main div.input .input-contain input::placeholder{
+    font-size: 1.5rem;
+}
+section.main div.input .not{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.main div.input .not .profile{
+    position: relative;
+}
+section.main div.input .not div{
+    position: relative;
+}
+section.main div.input .not div::after{
+    position: absolute;
+    top: 0px;
+    right: 2px;
+    content: '';
+    width: 8px;
+    height: 8px;
+    border: 2px solid var(--bg);
+    background-color: rgb(77, 238, 77);
+    border-radius: 50%;
+}
+section.main .flex{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+    height: 35%;
+}
+section.main .flex div.info{
+    margin: 3rem;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.main .flex div.info .cir{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    z-index: 1;
+}
+section.main .flex div.info .one{
+    z-index: -1;
+}
+section.main .flex div.info .two{
+    width: 220px;
+    height: 220px;
+    transform: translate(-10%,20%) rotate(7deg);
+}
+section.main .flex div.info .three{
+    width: 250px;
+    height: 250px;
+    transform: translate(6%,14%) rotate(70deg);
+    animation: three .4s ease-in-out .5s forwards;
+}
+section.main .flex div.info .four{
+    width: 280px;
+    height: 280px;
+    transform: translate(4%,17%) rotate(120deg);
+    animation: four .4s ease-in-out .5s forwards;
+}
+
+@keyframes three{
+    100%{
+        transform: translate(6%,14%) rotate(25deg);
+    }
+}
+@keyframes four{
+    100%{
+        transform: translate(25%,3%) rotate(15deg);
+    }
+}
+section.main .flex div.info article{
+    position: relative;
+    background-color: #000;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+section.main .flex div.info article img{
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    animation: spinner .4s ease-in-out .5s 5;
+}
+@keyframes spinner {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+section.main .flex div.info article small{
+    color: var(--pl);
+}
+section.main .flex div.grid{
+    display: grid;
+    grid-gap: 10%;
+    width: 300px;
+    height: 120px;
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: repeat(2, 45%);
+    transform: translateY(-50px);
+    opacity: 0;
+    animation: loading .4s ease-in-out .5s forwards;
+}
+@keyframes loading {
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+section.main .flex div.grid article{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+section.main .flex div.grid article div.dot{
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+}
+section.main .flex div.grid article div p{
+    font-size: 1.5rem;
+    color: var(--pl);
+}
+section.main .flex div.grid article div small{
+    font-size: 1.2rem;
+}
+section.main .statistic{
+    height: calc(100% - 100px - 35% - 2rem);
+}
+section.main .statistic .stat{
+    width: 100%;
+    height: 100%;
+}
+section.main .statistic .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+}
+section.main .statistic .header h3{
+    font-size: 1.7rem;
+}
+section.main .statistic .header p{
+    font-size: 1.5rem;
+    background-color: var(--bg);
+    box-shadow: 5px 7px 7px rgba(0, 0, 0, 0.22);
+    color: #F66D40;
+    padding: 1rem;
+    border-radius: 10px;
+}
+section.main .statistic .sta{
+    width: 100%;
+    height: 85%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.main .statistic .sta img.thread{
+    width: 100%;
+    height: 100%;
+}
+section.main .statistic .sta .grid{
+    position: absolute;
+    bottom: 0;
+    display: grid;
+    width: 100%;
+    height: 20px;
+    grid-template-columns: repeat(6, 16%);
+}
+section.main .statistic .sta .grid p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.main .statistic .sta .rec{
+    width: 90px;
+    height: 90%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    animation: rec .7s ease-in-out .9s forwards;
+}
+@keyframes rec {
+    100%{
+        opacity: 1;
+        left: 66%;
+    }
+}
+section.main .statistic .sta .rec div{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+section.main .statistic .sta .rec div .rect{
+    width: 100%;
+    height: 100%;
+}
+section.main .statistic .sta .rec div .arr{
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+section.main .statistic .sta .rec div .arr article{
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translatex(20px);
+}
+section.main .statistic .sta .rec div .arr article img{
+    width: 100%;
+    height: 100%;
+}
+section.main .statistic .sta .rec div .arr article p{
+    position: absolute;
+    font-size: 1.2rem;
+    transform: translateY(-5px);
+}
+section.main .statistic .payment-card{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+section.main .statistic .payment-card .header{
+    margin-bottom: 4rem;
+}
+section.main .statistic .payment-card form{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+section.main .statistic .payment-card form input{
+    border: 2px solid var(--brown-g);
+    background-color: transparent;
+    width: 80%;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    text-indent: 1rem;
+    color: #fff;
+}
+section.main .statistic .payment-card form button{
+    padding: 1.2rem 4rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--bg);
+    cursor: pointer;
+    background: linear-gradient(180deg, #FFD572 0%, #FEBD38 100%);
+}
+section.main .statistic .payment-card .tranMsg{
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.22);
+    border-radius: 20px;
+    background-color: var(--bg);
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    left: -100px;
+    bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-size: 2rem;
+    transition: all .3s;
+    opacity: 0;
+}
+section.main .statistic .payment-card .tranMsg.active{
+    display: flex;
+    opacity: 1;
+    transform: translateX(200px);
+}
+section.main .statistic .payment-card .tranMsg .icon{
+    font-size: 4rem;
+}
+section.main .statistic .payment-card .tranMsg .icon.cancel{
+    color: #f00;
+}
+section.main .statistic .payment-card .tranMsg .icon.check{
+    color: var(--brown);
+}

@@ -1,0 +1,67 @@
+section.history{
+    width: 25%;
+    height: 100vh;
+}
+section.history .twincard{
+    padding: 1.3rem;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.history .list{
+    margin: 0 auto;
+    width: 80%;
+    height: auto;
+}
+section.history .list .ju{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.2rem;
+}
+section.history .list .ju h3{
+    font-size: 1.4rem;
+}
+section.history .list .ju p{
+    font-size: 1.2rem;
+    color: var(--brown);
+}
+section.history .list .list--item{
+    max-height: 400px;
+    overflow-y: scroll;
+}
+section.history .list .list--item::-webkit-scrollbar {
+    width: .5rem;
+}
+section.history .list .list--item::-webkit-scrollbar-track {
+    background: var(--bg);
+}
+section.history .list .list--item::-webkit-scrollbar-thumb {
+    background: var(--brown);
+    border-radius: 10px;
+}
+section.history .list .list--item article{
+    padding-right: 1rem;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+section.history .list .list--item article .contain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+section.history .list .list--item article .contain img{
+    margin-right: 1.7rem;
+}
+section.history .list .list--item article div h5{
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+section.history .list .list--item article div small{
+    color: var(--pl);
+}
